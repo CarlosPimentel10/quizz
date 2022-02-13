@@ -45,12 +45,12 @@ class _QuizPageState extends State<QuizPage> {
       if (quizBrain.isFinished()) {
         Alert(
           context: context,
-          title: "You have finished the Game",
-          desc: "Please hit the button to restart.",
+          title: "Parabéns você terminou o jogo!",
+          desc: "Por favor pressione o botão pra reiniciar.",
           buttons: [
             DialogButton(
               child: const Text(
-                "Restart",
+                "Reiniciar Jogo",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               onPressed: () => Navigator.pop(context),
@@ -104,7 +104,7 @@ class _QuizPageState extends State<QuizPage> {
               style: TextButton.styleFrom(
                   backgroundColor: Colors.green, primary: Colors.white),
               child: const Text(
-                'True',
+                'Verdadeira',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
@@ -125,7 +125,7 @@ class _QuizPageState extends State<QuizPage> {
                 backgroundColor: Colors.red,
               ),
               child: const Text(
-                'False',
+                'Falsa',
                 style: TextStyle(
                   fontSize: 20.0,
                   color: Colors.white,

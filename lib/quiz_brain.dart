@@ -4,33 +4,56 @@ class QuizBrain {
   int _questionNumber = 0;
 
   final List<Question> _questionBank = [
-    Question('Some cats are actually allergic to humans', true),
-    Question('You can lead a cow down stairs but not up stairs.', false),
-    Question('Approximately one quarter of human bones are in the feet.', true),
-    Question('A slug\'s blood is green.', true),
-    Question('Buzz Aldrin\'s mother\'s maiden name was "Moon".', true),
-    Question('It is illegal to pee in the Ocean in Portugal.', true),
     Question(
-        'No piece of square dry paper can be folded in half more than 7 times.',
+        'A Psicologia é a ciência que estuda os comportamentos \n e os processos mentais ou fenómenos psíquicos como (emoção, percepção, sensação, sentimentos, memória. etc.) do homem e do animal, através da sua interacção com o meio físico e social.',
+        true),
+    Question(
+        'O pai da psicologia científica é Wilhelm Wundt. considera-se que \n a psicologia científica começou em 1879 quando Wilhelm Wundt montou o primeiro laboratório experimental de Psicologia na Universidade de Leipizig na Alemanha. O objectivo para a criação do laboratório era a ideia de que a mente, o comportamento poderiam ser objectos de análise científica',
         false),
     Question(
-        'In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.',
+        'Um dos objectivos da psicologia científica é: \n Descrever os comportamentos e os processos mentais',
         true),
     Question(
-        'The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.',
+        'A psicologia científica tem também o objectivo de: \n controlar as circunstâncias que causam os comportamentos apartir da previsão e da explicação',
+        true),
+    Question(
+        'As ideias de Watson contribuíram para que se rompesse a dependência da Psicologia com Filósofia, \n porque o behaviorismo apresentou um objecto de estudo para psicologia que é observável e susceptível a manipulação ou controle laboratorial que é o comportamento',
+        true),
+    Question(
+        'O médico nunca deve trabalhar sem psicólogo, nem o psiquiatra pode trabalhar isolado do psicólogo',
+        true),
+    Question(
+        'A anatomia é o ramo das ciências biológicas que estuda a constituição dos órgãos que formam o nosso organismo',
         false),
     Question(
-        'The total surface area of two human lungs is approximately 70 square metres.',
-        true),
-    Question('Google was originally called "Backrub".', true),
-    Question(
-        'Chocolate affects a dog\'s heart and nervous system; a few ounces are enough to kill a small dog.',
+        'Psicofisiologia: É a área de especialização da Psicologia, em que é adoptado uma perspectiva biológica, procura-se estabelecer relações entre os processos neurobiológicos e o comportamento...',
         true),
     Question(
-        'In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.',
+        'Segundo a OMS (2005) Saúde mental, refere-se a um estado de bem-estar, no qual o individuo percebe o seu potencial é capaz de lidar com o estresse normal da vida, trabalha de forma produtiva e dá um contributo para a sua comunidade',
+        false),
+    Question(
+        'Os critérios gerais para o diagnóstico de doença mental incluem: \n Insatisfação com as próprias características, habilidades e realizações;',
+        true),
+    Question(
+        'os enfermeiros podem promover a expressão e liberação da dor emocional e física, \n oferecer suporte emocional, ou seja, atender as necessidades psicológicas e físicas do paciente.',
+        true),
+    Question(
+        'O enfermeiro pode usar a linguagem corporal aberta como ficar em pé ou sentado, com os braços soltos de frente para o paciente, mantendo um contacto moderado pelo olhar, em especial enquanto o paciente estiver a falar',
+        true),
+    Question(
+        'Os tipos de perdas que estudamos são: perda fisiológica, perda da auto-estima, \n perda do bem-estar ou da saúde, perda material, perda de entequerido.',
+        true),
+    Question(
+        'Raiva, tristeza e ansiedade não são respostas emocionais predominantes quando ocorre uma perda.',
+        false),
+    Question(
+        'Os hospitais psiquiátricos são instituições de saúde especializada \n no diagnóstico e tratamento de doenças mentais',
+        true),
+    Question(
+        'Psicofarmacologia: dedica-se a análise dos efeitos dos fármacos nos tratamentos comportamentais, emocionais e cognitivos.',
         true),
   ];
-
+  
   void nextQuestion() {
     if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
