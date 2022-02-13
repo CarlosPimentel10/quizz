@@ -4,10 +4,10 @@ import 'quiz_brain.dart';
 
 QuizBrain quizBrain = QuizBrain();
 
-void main() => runApp(const Quizz());
+void main() => runApp(const PsicQuizz());
 
-class Quizz extends StatelessWidget {
-  const Quizz({Key? key}) : super(key: key);
+class PsicQuizz extends StatelessWidget {
+  const PsicQuizz({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
